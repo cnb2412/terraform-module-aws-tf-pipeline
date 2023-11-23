@@ -21,6 +21,7 @@ module "cicd-pipeline" {
 The Project Factory module will take the following actions:
 
 1. Create a S3 bucket for TF state files
+1. CodeRepo for TF IaC code
 
 
 <!-- BEGIN_TF_DOCS -->

@@ -11,3 +11,14 @@ resource "aws_s3_bucket_versioning" "tf_state_bucket_versioning" {
     status = "Enabled"
   }
 }
+
+
+# CodePipeline
+resource "aws_codecommit_repository" "repo" {
+  repository_name      = "${var.resource_prefix}-iac-repo"
+  description = "TF IaC Repo for ${var.resource_prefix}"
+  default_branch = var.default_branch
+  tags = {
+    tf_managed = "true"
+  }
+}
