@@ -2,7 +2,7 @@
 resource "aws_s3_bucket" "tf_state_bucket" {
   bucket = "${var.resource_prefix}-tfstate-storage"
   tags = {
-    aws_bootstrap = "true"
+    tf_managed = "true"
   }
 }
 resource "aws_s3_bucket_versioning" "tf_state_bucket_versioning" {

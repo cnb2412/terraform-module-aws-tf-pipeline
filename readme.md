@@ -11,7 +11,7 @@ Simple usage is as follows:
 
 ```hcl
 module "cicd-pipeline" {
-  source = "git::
+  source = "git::https://github.com/cnb2412/terraform-module-aws-tf-pipeline.git"
 }
 ```
 
@@ -19,7 +19,7 @@ module "cicd-pipeline" {
 
 The Project Factory module will take the following actions:
 
-1. Create a source repo on Code Commit
+1. Create a S3 bucket for TF state files
 
 
 <!-- BEGIN_TF_DOCS -->
