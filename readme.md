@@ -12,6 +12,7 @@ Simple usage is as follows:
 ```hcl
 module "cicd-pipeline" {
   source = "git::https://github.com/cnb2412/terraform-module-aws-tf-pipeline.git"
+  resource_prefix = <prefixes_for_ressources>
 }
 ```
 
